@@ -5,7 +5,12 @@ module.exports = {
   ],
   theme: {
     container:{
-      center : true
+      center : true,
+      screens : {
+        lg:'1140px',
+        xl:'1140px',
+        '2xl':'1140px',
+      },
     },
     extend: {
       fontFamily: {

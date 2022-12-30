@@ -11,7 +11,7 @@ const Header = () => {
             window.open("https://muradzeynalli.tk", "_blank");
           }}
         >
-          POP-C o r n
+          Corn
         </span>
         <nav className="justify-between flex-1">
           <div className="flex items-center text-lg space-x-8">
