@@ -3,18 +3,26 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="bg-black py-12 text-clr-grey font-gemunu uppercase">
-      <div className="container flex items-center justify-center space-x-16 ">
+    <header className="bg-black py-6 lg:py-12 text-clr-grey font-gemunu uppercase">
+      <div className="justify-between container flex items-center md:justify-center space-x-8 lg:space-x-16 ">
         <span
-          className="text-6xl font-bold cursor-pointer text-transparent bg-gradient-to-r bg-clip-text from-clr-red to-clr-grey "
+          className="pl-4 md:pl-0 text-4xl lg:text-6xl font-bold cursor-pointer text-transparent bg-gradient-to-r bg-clip-text from-clr-red to-clr-grey "
           onClick={() => {
             window.open("https://muradzeynalli.tk", "_blank");
           }}
         >
           Corn
         </span>
-        <nav className="justify-between flex-1">
-          <div className="flex items-center text-lg space-x-8">
+
+            <div className="block md:hidden">
+            <div className="space-y-1 cursor-pointer">
+                <i className="pr-4 md:pl-0 fas fa-bars text-2xl"></i>
+            </div>
+            </div>
+
+
+        <nav className="hidden md:flex justify-between flex-1">
+          <div className="flex items-center space-x-4 lg:text-lg lg:space-x-8">
             <Link
               to=""
               className="hover:text-clr-melon transition duration-600"
@@ -46,13 +54,13 @@ const Header = () => {
               About
             </Link>
           </div>
-        </nav>
-        <div className="flex items-center space-x-8">
+       
+        <div className="flex items-center space-x-4 lg:space-x-8">
           <form>
             <div className="group border-r px-4 mx-4 py-1 border-clr-red ">
               <input
                 type="text"
-                className=" opacity-0 transition duration-700 group-hover:opacity-100 bg-transparent border-b border-clr-red outline-none w-44"
+                className=" opacity-0 transition duration-700 group-hover:opacity-100 bg-transparent border-b border-clr-red outline-none w-20 lg:w-44"
               />
               <button className="-ml-4 group-hover:ml-0 transition duration-700">
                 <i className="fas fa-search group-hover:text-clr-red transition duration-700"></i>
@@ -60,15 +68,16 @@ const Header = () => {
             </div>
           </form>
         </div>
-        <div className="flex items-center space-x-8 text-lg">
+        <div className="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
           <Link to="#">Login</Link>
           <Link
             to="#"
-            className="bg-clr-red px-3 py-1 hover:bg-rose-600 hover:text-clr-grey transition duration-700"
+            className="bg-clr-red px-3 py-1 hover:bg-rose-600 hover:text-clr-grey transition duration-700 whitespace-nowrap"
           >
             Sign Up
           </Link>
         </div>
+        </nav>
       </div>
     </header>
   );
