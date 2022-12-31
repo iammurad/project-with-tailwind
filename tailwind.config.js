@@ -22,7 +22,10 @@ module.exports = {
         'clr-melon': '#FFD369',
         'clr-grey': '#DDDDDD',
         'clr-white': '#F7F7F7',
-      }
+      },
+      spacing : {
+        '128' : '32rem'
+      },
     },
   },
   plugins: [],
