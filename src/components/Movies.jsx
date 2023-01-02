@@ -22,18 +22,18 @@ const Movies = () => {
           <div className="flex flex-wrap p-1 lg:p-0  ">
     
           {MoviesData?.map(({id,name,description,image})=>(
-              <div key={id} className="group relative overflow-hidden basis-1/3">
+              <div key={id} className="group relative overflow-hidden basis-1/2 lg:basis-1/3">
               <img
                 src={image}
                 alt="logo"
                 className="group-hover:scale-110 group-hover:opacity-50 duration-500 "
               />
               <div className="absolute px-6 bottom-8">
-                <h3 className="text-clr-grey group-hover:text-clr-melon group-hover:mb-2 duration-500">
+                <h3 className="text-clr-grey  group-hover:text-clr-melon group-hover:mb-2 duration-500">
                   {name}
                 </h3>
                 
-                <p className="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500  text-clr-grey">
+                <p className="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-clr-grey">
                   {description}
                 </p>
 
@@ -58,9 +58,9 @@ const Movies = () => {
         <div className="basis-1/3">
           <h2 className="text-clr-grey mb-8 pl-2 lg:pl-0">Hot News</h2>
 
-              <div className="flex flex-col h-full justify-between pb-24 p-1 " >
+              <div className="flex flex-row lg:flex-col lg:h-full justify-start flex-wrap lg:flex-nowrap space-y-4 lg:justify-between lg:pb-24 pl-4 " >
             {HotNews.slice(0,6).map(({id,image,description,date }) => (
-                    <div className="flex items-center group" key={id} >
+                    <div className="flex items-center group basis-full md:basis-1/2" key={id} >
                       <div className="basis-1/3 h-full ">
                             <img src={image} className="h-full w-full object-cover" alt="news"/>
                       </div>
