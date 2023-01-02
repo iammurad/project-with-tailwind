@@ -42,3 +42,47 @@ export const MoviesData = [
     image: "https://pakistani.pk/uploads/reviews/photos/original/3d/ea/b7/The20Forest202016209-4-1457447947.jpg",
   },
 ];
+export const HotNews = [
+  {
+    id:1,
+    image:'https://www.thedigitalfix.com/wp-content/sites/thedigitalfix/2022/10/patrick-bateman-in-american-psycho.jpeg',
+    description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, itaque!',
+    date : '01-2023'
+  },
+  {
+    id:2,
+    image:'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2020%2F04%2F07%2FAmerican-Psycho.jpg&q=60',
+    description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, itaque!',
+    date : '01-2023'
+  },
+  {
+    id:3,
+    image:'https://m0vie.files.wordpress.com/2020/04/americanpsycho8a.jpg?w=640',
+    description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, itaque!',
+    date : '01-2023'
+  },
+  {
+    id:4,
+    image:'https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/bateman-b3694f6996046a229eafcef7096e0b22.jpg',
+    description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, itaque!',
+    date : '01-2023'
+  },
+  {
+    id:5,
+    image:'https://images.firstwefeast.com/complex/image/upload/c_fill,dpr_auto,f_auto,fl_lossy,g_face,q_auto,w_1280/hdbmjbkygqj1tknkxkcd.jpg',
+    description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, itaque!',
+    date : '01-2023'
+  },
+  {
+    id:6,
+    image:'https://ocdn.eu/pulscms-transforms/1/VxgktkqTURBXy85ZTE3MjA3NDNmNDEyZmZlYzUzNjE5ZWY2YzJhMzg4OC5qcGVnkpUDADDNBkDNA4STBc0EsM0CpA',
+    description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, itaque!',
+    date : '01-2023'
+  },
+  {
+    id:7,
+    image:'https://i.ytimg.com/vi/ZHYaj6EHfJg/sddefault.jpg',
+    description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, itaque!',
+    date : '01-2023'
+  },
+]

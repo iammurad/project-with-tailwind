@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MoviesData } from "../data";
+import { MoviesData,HotNews } from "../data";
 
 const Movies = () => {
   return (
     <section className="py-24 bg-black">
-      <div className="container flex space-x-16">
+      <div className="container flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:space-x-16">
         {/* Left Content */}
         <div className="basis-2/3">
-          <div className="flex space-x-2 divide-x divide-clr-red divide-opacity-50 mb-8">
+          <div className="flex space-x-2 divide-x divide-clr-red divide-opacity-50 mb-8 pl-2 lg:pl-0">
             <h2 className="text-clr-red">
               <Link to="">Latest</Link>
             </h2>
@@ -19,7 +19,7 @@ const Movies = () => {
               <Link to="">Best</Link>
             </h2>
           </div>
-          <div className="flex flex-wrap ">
+          <div className="flex flex-wrap p-1 lg:p-0  ">
     
           {MoviesData?.map(({id,name,description,image})=>(
               <div key={id} className="group relative overflow-hidden basis-1/3">
@@ -54,7 +54,29 @@ const Movies = () => {
            
           </div>
         </div>
-        <div className="basis-1/3 bg-blue-500"></div>
+        {/* Right Content */}
+        <div className="basis-1/3">
+          <h2 className="text-clr-grey mb-8 pl-2 lg:pl-0">Hot News</h2>
+
+              <div className="flex flex-col h-full justify-between pb-24 p-1 " >
+            {HotNews.slice(0,6).map(({id,image,description,date }) => (
+                    <div className="flex items-center group" key={id} >
+                      <div className="basis-1/3 h-full ">
+                            <img src={image} className="h-full w-full object-cover" alt="news"/>
+                      </div>
+                      <div className="pl-8 basis-2/3 text-clr-grey group-hover:text-clr-melon group-hover:cursor-pointer duration-500">
+                                  <p className="text-sm">{description}</p>
+                                  <p className="uppercase text-sm tracking-tighter mt-2 font-bold font-gemunu">ON Now {date}</p>
+                            </div>     
+                    </div>
+            ))}
+            </div>
+
+          
+        
+        
+        </div>
+
       </div>
     </section>
   );
