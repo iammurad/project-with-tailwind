@@ -1,6 +1,5 @@
 import React from "react";
-import { Header, Hero, Movies } from "../components";
-import Matrix from "../components/Matrix";
+import { Header, Hero, Movies,Matrix } from "../components";
 
 const Home = () => {
   return (
