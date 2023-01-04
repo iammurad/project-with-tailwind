@@ -1,6 +1,7 @@
 import React from "react";
 import CoverPhoto from "../assets/images/batman.jpg";
 import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <section className="h-96 lg:h-128 group relative">
